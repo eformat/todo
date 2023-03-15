@@ -1,0 +1,11 @@
+ 
+generate app
+- discuss other options
+
+show live reloading
+show continius testing
+show dev ui
+show prod and native
+
+add todo
+

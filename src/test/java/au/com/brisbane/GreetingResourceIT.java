@@ -1,4 +1,4 @@
-package au.com.brisbane.jug;
+package au.com.brisbane;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 
