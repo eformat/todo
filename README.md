@@ -1,6 +1,11 @@
 # todo
 
-dev mode
+Demo Script.
+
+https://code.quarkus.io/
+https://code.quarkus.redhat.com/
+
+dev mode, dev-ui
 
 ```bash
 mvn quarkus:dev
@@ -21,23 +26,24 @@ public class GreetingResource {
 }
 ```
 
-native build
-
-```bash
-mvn compile -Pnative
-```
-
-'r' real time tests, update test
+'r' real time tests, fix the test
 
 ```java
 @Test
 public void testHelloEndpoint() {
     given()
-      .when().get("/hello/Mike")
+      .when().get("/hello/world")
       .then()
          .statusCode(200)
-         .body(is("Hello Mike"));
+         .body(is("Hello world"));
 }
+```
+
+native build
+
+```bash
+mvn package -Pnative
+./target/todo-1.0.0-SNAPSHOT-runner -Dquarkus.log.console.color=false
 ```
 
 open api
@@ -71,7 +77,7 @@ public class TodoResource {
 ```json
 {
   "name": "Database",
-  "description": "add a databse",
+  "description": "Add a databse",
   "isDone": false
 }
 ```
@@ -216,3 +222,5 @@ query {
   }
 }
 ```
+
+what about spring
