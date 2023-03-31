@@ -2,6 +2,9 @@
 
 Demo Script.
 
+https://code.quarkus.io/
+https://code.quarkus.redhat.com/
+
 dev mode, dev-ui
 
 ```bash
