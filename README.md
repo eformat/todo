@@ -26,13 +26,6 @@ public class GreetingResource {
 }
 ```
 
-native build
-
-```bash
-mvn package -Pnative
-./target/todo-1.0.0-SNAPSHOT-runner -Dquarkus.log.console.color=false
-```
-
 'r' real time tests, fix the test
 
 ```java
@@ -44,6 +37,13 @@ public void testHelloEndpoint() {
          .statusCode(200)
          .body(is("Hello world"));
 }
+```
+
+native build
+
+```bash
+mvn package -Pnative
+./target/todo-1.0.0-SNAPSHOT-runner -Dquarkus.log.console.color=false
 ```
 
 open api
